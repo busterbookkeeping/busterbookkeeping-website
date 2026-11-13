@@ -21,3 +21,9 @@
 .eyebrow{color:#38764a}
 .service-icon{background:#eaf4e9}
 @media(max-width:520px){.brand img{width:205px}.nav{min-height:75px}}
+
+/* Approved About photo: preserve faces and fade gently into experience text */
+.side-photo-couple{height:250px;background:#f8faf7;overflow:hidden;position:relative}
+.side-photo-couple:after{content:"";position:absolute;inset:auto 0 0;height:36%;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none}
+.side-photo-couple img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 36%}
+@media(max-width:520px){.side-photo-couple{height:230px}}
